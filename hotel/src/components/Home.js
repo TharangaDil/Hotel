@@ -8,7 +8,7 @@ export default function Home(){
       <div className="address">No 124/1, Puttalam Road, Nochchiyagama, Sri Lanka</div>
       <marquee>Samanala Hotel - Nochchiyagama</marquee>
 
-      <ul >
+      <ul className="naviga" >
         <li className="nav"><a href="mainpage.html">Home</a></li>
         <li className="nav"><a href="Gallery.html">Gallery</a></li>
         <li className="nav"><a href="About.html">About Us</a></li>
@@ -27,34 +27,35 @@ export default function Home(){
     <footer>
       <br />
 
-      <div style={{ fontSize: '20px', fontFamily: 'serif' }} className="city">Cities Nearby</div>
-      <br />
+      <div style={{ fontSize: '20px', fontFamily: 'serif' }} className="city">Cities Nearby<br />
+      
       <ul className="cities">
-        <li>Pahala Keditokkuwa (3.5km)</li><br />
-        <li>Pahala Maragahawewa (3.5km)</li><br />
-        <li>Wilpattu (3.8km)</li><br />
-        <li>Habawewa (4.5km)</li><br />
-        <li>Kukulkatuwa (4.9km)</li><br />
-        <li>Anuradhapura (16km)</li><br />
-        <li>Puttalam District (17.2km)</li><br />
+        <li>Pahala Keditokkuwa (3.5km)</li>
+        <li>Pahala Maragahawewa (3.5km)</li>
+        <li>Wilpattu (3.8km)</li>
+        <li>Habawewa (4.5km)</li>
+        <li>Kukulkatuwa (4.9km)</li>
+        <li>Anuradhapura (16km)</li>
+        <li>Puttalam District (17.2km)</li>
         <li>Wilpattu National Park (17.2km)</li>
       </ul>
+      </div>
 
-      <br /><br />
+      <br />
 
-      <div>Follow us:</div>
-      <ul>
-        <li>Facebook -&nbsp;&nbsp;<a href="Samanala Hotel facebook.lk" className="f">Samanala Hotel</a></li>
-        <li>E-mail - &nbsp;&nbsp;<a href="samanalahnochchiyagama@gmail" className="f">samanalahnochchiyagama@gmail</a></li>
-        <li>Telephone - &nbsp;&nbsp;0259856758</li>
+      <div className="follow">Follow us:</div>
+      <ul className="social">
+        <li className="s1">Facebook -&nbsp;&nbsp;<a href="Samanala Hotel facebook.lk" className="f">Samanala Hotel</a></li>
+        <li className="s1">E-mail - &nbsp;&nbsp;<a href="samanalahnochchiyagama@gmail" className="f">samanalahnochchiyagama@gmail</a></li>
+        <li className="s1">Telephone - &nbsp;&nbsp;0259856758</li>
       </ul>
 
-      <br /><br />
+     
 
-      <div>
-        <a href="help" className="o">Help Center</a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="deytail">More Details</a>
+      <div className="helpp">
+        <a href="help" >Help Center</a>
+        
+        <a href="detail" className="more" >More Details</a>
       </div>
     </footer>
 
