@@ -1,6 +1,19 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
+import './CSS/main.css';
 
 export default function Home(){
+  const navigate = useNavigate();
+
+  const gotoHome = () => {
+    navigate('/Home');
+};
+
+const gotoGallery = () => {
+  navigate('/Gallery');
+};
+
+
     return(
         <>
         <header className="header1">
@@ -9,12 +22,12 @@ export default function Home(){
       <marquee>Samanala Hotel - Nochchiyagama</marquee>
 
       <ul className="naviga" >
-        <li className="nav"><a href="mainpage.html">Home</a></li>
-        <li className="nav"><a href="Gallery.html">Gallery</a></li>
-        <li className="nav"><a href="About.html">About Us</a></li>
-        <li className="nav"><a href="login.html">Login</a></li>
-        <li className="nav"><a href="contact.html">Contact Us</a></li>
-        <li className="nav"><a href="reservation.html">Reservation</a></li>
+        <li className="nav"><a href='/Home' onClick={gotoHome}>Home</a></li>
+        <li className="nav"><a href='/Gallery' onClick={gotoGallery}>Gallery</a></li>
+        <li className="nav"><a href="About">About Us</a></li>
+        <li className="nav"><a href="Login">Login</a></li>
+        <li className="nav"><a href="Contact">Contact Us</a></li>
+        <li className="nav"><a href="Reservation">Reservation</a></li>
       </ul>
 
       <br /><br /><br />
